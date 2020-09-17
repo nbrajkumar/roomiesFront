@@ -67,6 +67,8 @@ class LoginPage extends React.Component {
                 <Loginner usernameValue={this.state.username} passwordValue={this.state.password}
                           usernameChange={this.updateUsername} passwordChange={this.updatePassword} submit={this.loginRequest}
                             verified={this.state.token}/>
+                <br/>
+                <button onClick={this.props.signupChange}>Sign Up</button>
             </div>
         );
     }
